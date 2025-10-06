@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="icon" href="">
+    <title>SKL Learn - Online Courses Platform</title>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar ">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><i class="fa-solid fa-graduation-cap"></i></a>
+                <a href="index.html" class="logo-text">Skl Learn</a>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button><a href="login.html" class="login-btn">Login</a></button>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Course Details Content -->
+    <section class="course-details">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="courses.html">Courses</a>
+                <span>/</span>
+                <span id="course-breadcrumb">Course Details</span>
+            </nav>
+
+            <div class="course-details-content">
+                <!-- Course Header -->
+                <div class="course-header">
+                    <div class="course-image">
+                        <img src="" alt="Course Image" id="course-details-image">
+                    </div>
+
+                    <div class="course-info">
+                        <div class="course-category">
+                            <span id="course-details-category"></span>
+                        </div>
+                        <h1 id="course-details-title"></h1>
+                        <p id="course-details-description"></p>
+
+                        <div class="course-meta">
+
+                            <div class="instructor">
+                                <i class="fas fa-user"></i>
+                                <span>Instructor: </span>
+                                <span id="course-details-instructor"></span>
+                            </div>
+
+                            <div class="rating">
+                                <div class="stars" id="course-details-stars"></div>
+                                <span id="course-details-rating"></span>
+                                <span>(<span id="course-details-students"></span>students)</span>
+
+                            </div>
+
+                            <div class="duration">
+                                <i class="fas fa-clock"></i>
+                                <span id="course-details-duration"></span>
+                            </div>
+                        </div>
+                        <div class="course-price">
+                            <span class="price" id="course-details-price"></span>
+                        </div>
+
+                        <button class="enroll-btn" id="enroll-btn">
+                            <i class="fas fa-play"></i>
+                            Enroll Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Course Content Sections -->
+                <div class="course-sections">
+                    <div class="section-tabs">
+                        <button class="tab-btn active" data-tab="overview">Overview</button>
+                        <button class="tab-btn" data-tab="curriculum">Curriculum</button>
+                        <button class="tab-btn" data-tab="reviews">Reviews</button>
+                    </div>
+
+                    <div class="tab-content">
+                        <!-- Overview Tab -->
+                        <div class="tab-pane active" id="overview">
+                            <h3>Course Overview</h3>
+                            <div id="course-overview-content">
+                                <p>This comprehensive course will teach you everything you need to know about the
+                                    subject. You'll learn practical skills that you can apply immediately in real-world
+                                    scenarios.</p>
+
+                                <h4>What you'll learn:</h4>
+                                <ul id="learning-objectives">
+                                    <!-- Learning objectives will be populated by JavaScript -->
+                                </ul>
+                                <h4>Requirements:</h4>
+                                <ul id="course-requirements">
+                                    <li>Basic computer skills</li>
+                                    <li>Internet connection</li>
+                                    <li>Willingness to learn</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Curriculum Tab -->
+                        <div class="tab-pane" id="curriculum">
+                            <h3>Course Curriculum</h3>
+                            <div class="curriculum-content">
+
+                                <div class="curriculum-section">
+                                    <h4>Section 1: Introduction</h4>
+                                    <ul class="lesson-list">
+                                        <li><i class="fas fa-play-circle"></i> Welcome to the course (5 min)</li>
+                                        <li><i class="fas fa-play-circle"></i> Course overview (10 min)</li>
+                                        <li><i class="fas fa-file-alt"></i> Course materials</li>
+                                    </ul>
+                                </div>
+
+                                <div class="curriculum-section">
+                                    <h4>Section 2: Fundamentals</h4>
+                                    <ul class="lesson-list">
+                                        <li><i class="fas fa-play-circle"></i> Basic concepts (15 min)</li>
+                                        <li><i class="fas fa-play-circle"></i> Hands-on practice (20 min)</li>
+                                        <li><i class="fas fa-clipboard-check"></i> Quiz: Fundamentals</li>
+                                    </ul>
+                                </div>
+
+                                <div class="curriculum-section">
+                                    <h4>Section 3: Advanced Topics</h4>
+                                    <ul class="lesson-list">
+                                        <li><i class="fas fa-play-circle"></i> Advanced techniques (25 min)</li>
+                                        <li><i class="fas fa-play-circle"></i> Real-world project (30 min)</li>
+                                        <li><i class="fas fa-certificate"></i> Final assessment</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Reviews Tab -->
+                        <div class="tab-pane " id="reviews">
+                            <h3>Student Reviews</h3>
+
+                            <div class="reviews-content">
+                                <div class="review-item">
+                                    <div class="review-header">
+                                        <div class="reviewer-name">Jasmine Eldmrdash</div>
+                                        <div class="review-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <p>"Excellent course! The instructor explains everything clearly and the
+                                        practical examples are very helpful."</p>
+                                </div>
+
+                                <div class="review-item">
+                                    <div class="review-header">
+                                        <div class="reviewer-name">Mike Chen</div>
+                                        <div class="review-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <p>"Great content and well-structured. I learned a lot and can already apply the
+                                        skills in my work."</p>
+                                </div>
+
+                                <div class="review-item">
+                                    <div class="review-header">
+                                        <div class="reviewer-name">Emily Davis</div>
+                                        <div class="review-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <p>"Highly recommended! The course exceeded my expectations and the support from
+                                        the instructor was amazing."</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <a href="index.html"><i class="fas fa-graduation-cap"></i><span>EduLearn</span></a>
+                    </div>
+                    <p>Empowering learners worldwide with quality online education.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">courses</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Programming</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Artificial Intelligence</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> ahmed.magdy.cy@gmail.com</p>
+                        <p><i class="fas fa-phone"></i>+20 1119854524</p>
+                        <p><i class="fas fa-map-marker-alt"></i>Skill-Education-Website</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EduLearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/animation.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

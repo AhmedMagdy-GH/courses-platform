@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="icon" href="">
+    <title>SKL Learn - Online Courses Platform</title>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar ">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><i class="fa-solid fa-graduation-cap"></i></a>
+                <a href="index.html" class="logo-text">Skl Learn</a>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button><a href="login.html" class="login-btn">Login</a></button>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="conatainer">
+            <h1>All Courses</h1>
+            <p id="all-courses-pf"></p>
+        </div>
+    </section>
+
+    <!-- Courses Page Content -->
+    <section class="courses-page">
+        <div class="container">
+            <!-- Search and Filter Section -->
+            <div class="search-filter-section">
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="course-search"  class="course-search" placeholder="search courses....">
+                    </div>
+                </div>
+
+                <div class="filter-container">
+                    <label for="Category-filter">Filter by Category:</label>
+                    <select name="category-filter" id="category-filter">
+                        <option value="all">All Categories</option>
+                        <option value="programming">Programming</option>
+                        <option value="design">Design</option>
+                        <option value="business">Business</option>
+                        <option value="ai">Artificial Intelligence</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="photography">Photography</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="courses-result">
+                <div class="results-header">
+                    <h2 id="result-count">Showing all courses</h2>
+                </div>
+                <div class="courses-grid" id="courses-grid">
+                    <!-- Course cards will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <a href="index.html"><i class="fas fa-graduation-cap"></i><span>EduLearn</span></a>
+                    </div>
+                    <p>Empowering learners worldwide with quality online education.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">courses</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Programming</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Artificial Intelligence</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> ahmed.magdy.cy@gmail.com</p>
+                        <p><i class="fas fa-phone"></i>+20 1119854524</p>
+                        <p><i class="fas fa-map-marker-alt"></i>Skill-Education-Website</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EduLearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="JS/animation.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
