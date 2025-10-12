@@ -1268,4 +1268,16 @@ body {
     .course-meta {
         font-size: 0.9rem;
     }
+
+    html,
+    body {
+        width: 100vw;
+        background-color: white;
+    }
+    
+    .course-sections .tab-btn{
+        width: 9rem;
+        font-size: 1rem;
+        gap: 0.3rem;
+    }
 }
