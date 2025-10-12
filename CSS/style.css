@@ -1277,8 +1277,8 @@ body {
     }
     
     .course-sections .tab-btn{
-        width: 9rem;
+        width: 7rem;
         font-size: 1rem;
-        gap: 0.3rem;
+        
     }
 }
